@@ -1,0 +1,28 @@
+--- pandas 2개의 자료형
+Series	: 1차원 형태의 데이터
+DataFrame : 2차원 형태의 데이터(Series가 모여서 형서)
+
+---
+Series vs list
+
+-> 인덱스 (0,1,2,3,4,...)
+-> 인덱스를 날짜로 변경가능 또한 이걸로 접근가능
+
+---
+인덱스 지정하는 파라미터
+dat = Series([1,2,3,4], index=___,
+				columns=____)
+				
+----
+team df
+컬럼 : 'catanddog', 'toto', 'apple', 'gildong'
+
+#여러개의 컬럼 
+'catanddog', 'toto' 선택하기
+team_df n = team_df[['catanddog','toto']]
+
+#iloc, loc
+iloc : 데이터 선택 추출시 번호를 이용해서 정보를 접근가능
+
+
+loc : 데이터를 인덱스를 이용해서 정보를 가져온다.
