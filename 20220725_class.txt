@@ -1,0 +1,74 @@
+### 수업정리
+ - 파이썬 시각화 라이브러리
+	- matplotlib
+	- seaborn
+	- folium
+	- poltly
+	
+ - 데이터 처리 및 가공
+	- pandas
+	
+	
+ - 데이터 처리 pandas의 대표적인 자료형
+	- DataFrame, Series
+	- Series가 List와 다른점.
+		- 인덱스가 메모리가 저장되어 있어, 수정이 가능하다.
+ - numpy : 선형대수 및 수학 및 난수 발생
+	- 딥러닝 기본 자료형 사용.
+ - pandas
+ - 딥러닝 - Deep Neural 
+	입력층(Input Layer) - 은닉층(Hidden Layer) - 출력층(Output Layer)
+	
+ - 데이터의 의해서 결정되는 층이 2개가 있다.
+	- 연송형 예측하기 (출력층 뉴련이 하낟.)
+	- 범주형 (MNIST, Paddy doctor) 예측 
+		-> (출려층은 범주형 개수만큼 뉴런을 만든다.
+		-> 활성화 함수가 softmax가 된다.
+			-> softmax 활성화 함수는 값을 전부 더하면 1이다.
+			-> 출력충의 각 뉴런에서 마지막에 출력되는 값은 확률적으로 이 값이 나올 확률.
+			
+ - 활성화 함수란?
+	- 종류 : sigmoid : 0~1, relu : 0~무한대(음수 -> 0, 양수에서 무한대 증가)
+	- 활성화 함수가 있는 것과 없는 것의 차이
+		-> 선형문제만 풀 수 있는 것이 아니라, 비선형 문제까지 해결 가능.
+ - optimizer란? 손실함수를 최저값으로 만들기 위해서, 가중치
+	adam
+	rmsprop
+	sgd
+	gd
+	
+ - loss 함수? 마지막  결과값과 실제 가진 값을 오차를 구하는 함수가
+	mse(mean squared error)
+	categorical crossentropy
+	binar crossentropy
+	
+ - CNN ?
+	- 이미지 분야에 있어 뛰어난 성능을 낼 수 있다.
+	- FCL의 이 한계를 극복하기 이ㅜ해 CNN이 적용
+		- 공간정보 손실을 극복. 공간 정보의 특징을 살릴 수 있다.
+		- 파라미터의 수가 줄어든다.
+			- Conv, Pooling을 통해서 이미지크기 줄어듬
+	- Conv - Pooling 계층과 FCL로 연결
+		- Conv(컨볼루션) - 이미지의 값을 요약
+		- Pooling - 이미지를 다운 샘플링
+	- Stride : 필터가 움직이는 크기
+		- 
+	- Filter
+		- 가중치를 가지고 있다.
+		- 이미지의 특징을 각 필터가 갖게되고 ,찾을 수 있다.
+		
+	- 특징맵(feature map)
+		- 필터와 합성곱 연산을 통해서 만들어지는 결과물.
+	
+	- Pooling에는 가중치가 있을까?
+		- Max Pooling
+		- Min Pooling
+		- Average Pooling
+
+------------------------------------------------------------------------------------------------
+iloc range와 같은 방식으로 동작
+loc 레이블로 접근 마지막 요소까지 포함
+pandas와 numpy는 일부 요소는 공유되나 모든 요소가 공유된느 것은 아님
+
+from sklearn.neighbors import KNeighborsClassifier 범주형
+from sklearn.neighbors import KNeighborsRegressor 범주형
