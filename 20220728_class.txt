@@ -1,0 +1,35 @@
+### 선형모델
+	- 선형방정식으로 표현된다.
+	- 하이퍼 파라미터가 없다.
+		- 모델 파라미터가 존재한다.
+	- 특성이 하나 - 직선
+		y = w1 * x1 + b
+	- 특성이 두개 - 평면
+		y = w1 * x1 + w2 * x2 + b
+	- 특성이 세개 - 초평면
+	
+
+### 
+sklearn.linear_model._____ : 선형회귀, Ridge, Lasso
+sklearn.neighbors.___ 	   : knn모델
+sklearn.ensemble.___       : 앙상블 모델
+sklearn.svc.____           : 많이 쓰이는 모델은 아니다.
+sklearn.tree._____         : 의사결정트리
+
+import xgboost
+import lightgbm
+import catboost
+
+root node -> tree 최상단 노드
+
+1000개를 가장 적절하게 나눌 수 있는 변수와 변수의 값은 무엇인가?
+
+gini, entropy낮아지는 방향으로
+
+ - 데이터의 학습을 통해 에측해주는 방법론(의사결정트리)
+ - Binary Decision Tree
+ - 가장 효율적인 학습법
+ - gini, entropy//// 조건 기준에 따라서 gini,entropy가 가장낮아 지는 방향으로 변수나 기준이 선택됨
+ - gini, entropy 가 0이 될떄까지 분기한다.
+ - 예측하는 값(target)이 하나의 범주, 분류가 됐을때 gini, entropy가 0이 됐다고 한다.
+ - 
